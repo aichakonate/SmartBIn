@@ -41,14 +41,14 @@
         return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
       },
       onEachFeature: function( feature, layer ){
-        layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " rats per square mile" )
+        layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " bins per square mile" )
       }
     }).addTo(map);
   });
  
   $.getJSON("rodents.geojson",function(data){
     var ratIcon = L.icon({
-      iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',
+      iconUrl: 'https://image.flaticon.com/icons/png/128/54/54324.png',
       iconSize: [60,50]
     });
     var rodents = L.geoJson(data,{
