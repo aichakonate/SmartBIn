@@ -17,7 +17,7 @@
   <script>
  
   // initialize the map
-  var map = L.map('map').setView([42.35, -71.08], 13);
+  var map = L.map('map').setView([53.350140, -6.266155], 13);
  
   // load a tile layer
   L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
